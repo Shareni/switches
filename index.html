@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="switches">
+            <button id="oven" class="switch">Sporet</button>
+            <button id="iron" class="switch">Pegla</button>
+        </div>
+        <script>
+         var ovenOn = false;
+         var ironOn = false;
+
+         function toggle(appliance) {
+             appliance = !appliance
+
+             if appliance == true {
+                 console.log("true")
+             }
+             else {
+                 console.log("false")
+             }
+         }
+
+         document.getElementById("oven").onclick = function() {toggle(ovenOn)}
+         document.getElementById("iron").onclick = function() {toggle(ironOn)}
+        </script>
+    </body>
+</html>
